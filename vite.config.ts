@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
 const port = Number(process.env.PORT) || 21751;
-const basePath = process.env.BASE_PATH || '/';
+const basePath = process.env.BASE_PATH || (process.env.GITHUB_ACTIONS ? '/3dhubbrasil/' : '/');
 
 export default defineConfig({
   base: basePath,
