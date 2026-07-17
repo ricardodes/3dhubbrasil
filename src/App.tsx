@@ -26,6 +26,7 @@ import EditModal from './components/EditModal';
 import CategoryModal from './components/CategoryModal';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
+import SuggestionButton from './components/SuggestionButton';
 
 function App() {
   const [activeTool, setActiveTool] = useState<string | null>(null);
@@ -197,6 +198,7 @@ function App() {
 
       <Footer />
       <BackToTop />
+      <SuggestionButton />
 
       <button
         onClick={() => setEditMode(!editMode)}
