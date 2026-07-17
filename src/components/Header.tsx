@@ -22,7 +22,7 @@ const Header = ({ searchQuery, setSearchQuery, theme, toggleTheme }: HeaderProps
     <header className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${scrolled ? 'glass-header py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2 cursor-pointer flex-shrink-0">
-          <img src="/logo.png" alt="3DHubBrasil" className="w-9 h-9 rounded-xl object-cover" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="3DHubBrasil" className="w-9 h-9 rounded-xl object-cover" />
           <span className="font-poppins font-bold text-xl text-white tracking-tight">3DHub<span className="text-[#00A8FF]">Brasil</span></span>
         </Link>
 

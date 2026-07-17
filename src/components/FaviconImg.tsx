@@ -9,21 +9,22 @@ interface FaviconImgProps {
 
 function getToolImage(name: string): string {
   const safeName = name.replace(/[^\w\-]/g, '_');
-  return `/toolimages/${safeName}.jpg`;
+  return `${import.meta.env.BASE_URL}toolimages/${safeName}.jpg`;
 }
 
 function getNameFavicon(name: string): string {
+  const b = import.meta.env.BASE_URL;
   const nameToFavicon: Record<string, string> = {
-    'Mercado Livre': '/favicons/www.mercadolivre.com.br.png',
-    'Amazon BR': '/favicons/sellercentral.amazon.com.br.png',
-    'Shopee': '/favicons/seller.shopee.com.br.png',
-    'Magalu': '/favicons/www.magazineluiza.com.br.png',
-    'TikTok Shop': '/favicons/seller-br.tiktok.com.png',
-    'Elo7': '/favicons/www.elo7.com.br.png',
-    'Etsy': '/favicons/www.etsy.com.png',
-    'Enjoei': '/favicons/www.enjoei.com.br.png',
-    'Nuvemshop': '/favicons/www.nuvemshop.com.br.png',
-    'Tray': '/favicons/www.tray.com.br.png',
+    'Mercado Livre': `${b}favicons/www.mercadolivre.com.br.png`,
+    'Amazon BR': `${b}favicons/sellercentral.amazon.com.br.png`,
+    'Shopee': `${b}favicons/seller.shopee.com.br.png`,
+    'Magalu': `${b}favicons/www.magazineluiza.com.br.png`,
+    'TikTok Shop': `${b}favicons/seller-br.tiktok.com.png`,
+    'Elo7': `${b}favicons/www.elo7.com.br.png`,
+    'Etsy': `${b}favicons/www.etsy.com.png`,
+    'Enjoei': `${b}favicons/www.enjoei.com.br.png`,
+    'Nuvemshop': `${b}favicons/www.nuvemshop.com.br.png`,
+    'Tray': `${b}favicons/www.tray.com.br.png`,
   };
   return nameToFavicon[name] || '';
 }
@@ -31,7 +32,7 @@ function getNameFavicon(name: string): string {
 function getFaviconUrl(url: string): string {
   try {
     const u = new URL(url);
-    return `/favicons/${u.hostname}.png`;
+    return `${import.meta.env.BASE_URL}favicons/${u.hostname}.png`;
   } catch {
     return '';
   }

@@ -10,7 +10,7 @@ const HeroSection = ({ totalItems }: HeroSectionProps) => {
     <section className="relative pt-32 pb-32 lg:pt-40 lg:pb-40 flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/hero-3dprinter.jpg)' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-3dprinter.jpg)` }}
       >
         <div className="absolute inset-0 bg-[#060D18]/70 backdrop-blur-[1px]"></div>
       </div>

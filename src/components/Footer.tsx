@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="3DHubBrasil" className="w-7 h-7 rounded-lg object-cover" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="3DHubBrasil" className="w-7 h-7 rounded-lg object-cover" />
             <span className="font-poppins font-bold text-xl text-white">3DHub<span className="text-[#00A8FF]">Brasil</span></span>
           </div>
           
