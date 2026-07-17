@@ -64,23 +64,6 @@ export const defaultCategories = [
     ]
   },
   {
-    id: "lojas",
-    name: "🏪 Onde Vender",
-    icon: "fa-store",
-    isLinkList: true,
-    items: [
-      {name:"Mercado Livre", link:"https://www.mercadolivre.com.br/anuncie", desc:"Maior marketplace BR. Comissão 10–19% (Clássico 10–14%, Premium 15–19%) + R$6 por item abaixo de R$79. Envio Full disponível."},
-      {name:"Amazon BR", link:"https://sellercentral.amazon.com.br", desc:"Alcance clientes em todo o Brasil. Comissão 8–15% + R$2/item (Individual) ou R$19/mês (Profissional). FBA opcional."},
-      {name:"Shopee", link:"https://seller.shopee.com.br", desc:"Comissão 14–20% por faixa de preço + R$4–26/item. Sem mensalidade. Boa base de compradores."},
-      {name:"Magalu", link:"https://www.magazineluiza.com.br/parceiro", desc:"Comissão 10–20% por categoria. Promoções: até 50% off para novos sellers. Envio Magalu disponível."},
-      {name:"TikTok Shop", link:"https://seller-br.tiktok.com", desc:"Comissão 6–10% + R$4–6/item. Sem mensalidade. Isenção de taxa por 60 dias para novos sellers."},
-      {name:"Etsy", link:"https://www.etsy.com/sell", desc:"Marketplace global para artesanato. US$0.20/listing + 6.5% transação + 3%+$0.25 processamento. 15% Offsite Ads."},
-      {name:"Enjoei", link:"https://www.enjoei.com.br", desc:"Marketplace de produtos usados/novos. Comissão ~12–18%. Frete grátis até 1kg. Peças únicas e colecionáveis."},
-      {name:"Nuvemshop", link:"https://www.nuvemshop.com.br", desc:"Crie sua loja própria. Sem comissão por venda. Planos grátis a R$449/mês + taxas do gateway de pagamento."},
-      {name:"Tray", link:"https://www.tray.com.br", desc:"E-commerce self-service. Planos R$19–299/mês. Sem comissão por venda usando gateway próprio."}
-    ]
-  },
-  {
     id: "stls",
     name: "📦 STLs Grátis",
     icon: "fa-download",

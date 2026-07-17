@@ -12,6 +12,7 @@ import NewsTicker from './components/NewsTicker';
 import CotacaoBar from './components/CotacaoBar';
 import HeroSection from './components/HeroSection';
 import ToolsNav from './components/ToolsNav';
+import VendedorBar from './components/VendedorBar';
 import CalculatorTool from './components/CalculatorTool';
 import Filamentos from './pages/Filamentos';
 import FavoritesSection from './components/FavoritesSection';
@@ -124,6 +125,8 @@ function App() {
         ) : (
           <div className="flex flex-col gap-8">
             <ToolsNav activeTool={activeTool} setActiveTool={setActiveTool} />
+
+            <VendedorBar />
 
             {activeTool === 'calculadora' && <CalculatorTool />}
             {activeTool === 'filamentos' && <Filamentos />}
