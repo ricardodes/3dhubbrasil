@@ -9,7 +9,7 @@ interface FaviconImgProps {
 
 function getToolImage(name: string): string {
   const safeName = name.replace(/[^\w\-]/g, '_');
-  return `${import.meta.env.BASE_URL}toolimages/${safeName}.jpg`;
+  return `${import.meta.env.BASE_URL}toolimages/${safeName}.webp`;
 }
 
 function getNameFavicon(name: string): string {
