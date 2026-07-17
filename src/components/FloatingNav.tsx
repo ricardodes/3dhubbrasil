@@ -75,7 +75,7 @@ const FloatingNav = ({ cats, onReorder }: FloatingNavProps) => {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-[3.6rem] left-0 right-0 z-30 flex justify-center px-4 pointer-events-none">
+    <div className="fixed top-[9.85rem] left-0 right-0 z-30 flex justify-center px-4 pointer-events-none">
       <div className="pointer-events-auto bg-[#07101F]/95 backdrop-blur-xl border border-white/[0.07] rounded-2xl px-3 py-2 shadow-[0_8px_40px_rgba(0,0,0,0.7)]">
         <div
           ref={scrollRef}
@@ -112,7 +112,6 @@ const FloatingNav = ({ cats, onReorder }: FloatingNavProps) => {
                     <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent" />
                   )}
                   <span className="relative z-10 flex items-center gap-1.5">
-                    {cat.icon && <span className="text-[10px]">{cat.icon}</span>}
                     {displayName}
                   </span>
                   {isActive && <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-white" />}
