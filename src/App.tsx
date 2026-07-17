@@ -9,7 +9,6 @@ import Header from './components/Header';
 import FloatingNav from './components/FloatingNav';
 import ApoioBar from './components/ApoioBar';
 import NewsTicker from './components/NewsTicker';
-import CotacaoBar from './components/CotacaoBar';
 import HeroSection from './components/HeroSection';
 import ToolsNav from './components/ToolsNav';
 import VendedorBar from './components/VendedorBar';
@@ -137,8 +136,6 @@ function App() {
             {activeTool === 'calibracao' && <Calibracao />}
             {activeTool === 'marketing' && <Marketing />}
             {activeTool === 'filamentos' && <Filamentos />}
-
-            <CotacaoBar />
 
             {favoritedItems.length > 0 && (
               <FavoritesSection
