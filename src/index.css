@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #0b1a2e;
+  color: #e6edf6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1a2e;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00a8ff, #0077be);
+  border-radius: 999px;
+}
+
+/* Hero background image overlay */
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(11, 26, 46, 0.55) 0%, rgba(11, 26, 46, 0.85) 60%, #0b1a2e 100%),
+    url('https://images.unsplash.com/photo-1581090518330-3b3b1c3f4b5c?w=1200') center / cover no-repeat;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00a8ff, #0077be);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  background: linear-gradient(90deg, #00a8ff, #0077be);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
