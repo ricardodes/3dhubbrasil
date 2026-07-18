@@ -130,6 +130,7 @@ const FloatingNav = ({ cats, onReorder }: FloatingNavProps) => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };
